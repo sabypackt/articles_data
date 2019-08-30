@@ -1,7 +1,7 @@
 # Practical tips for RL engineering
 Learning from experiences and the associated rewards or punishments is the core idea behind **reinforcement learning** (**RL**). In RL, the model trains from experience rather than labeled data. Instead of providing the model with the correct actions, we provide it with rewards and punishments. The model receives information about the current state of the environment, for example, the computer game screen. It then outputs an action, such as a joystick movement. The environment reacts to this action and provides the next state, along with any rewards.
 
-_This is an excerpt from the book [Machine Learning for Finance](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-finance?utm_source=simplystatistics&utm_medium=referral&utm_campaign=Outreach_PEN) written by Jannes Klaas. This book introduces the study of machine learning and deep learning algorithms for financial practitioners._
+_This is an excerpt from the book [Machine Learning for Finance](https://www.amazon.com/dp/1789136369?utm_source=simplystatistics&utm_medium=referral&utm_campaign=Outreach_PEN) written by Jannes Klaas. This book introduces the study of machine learning and deep learning algorithms for financial practitioners._
 
 RL allows us to learn sophisticated decision-making rules while having no data at all. RL is the go-to techniques if no supervised learning is possible, but a reward signal is available. In this article section, we will be introducing some practical tips for building RL systems. We will also highlight some current research frontiers that are highly relevant to financial practitioners. 
 
