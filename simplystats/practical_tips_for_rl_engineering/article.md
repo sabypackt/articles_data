@@ -17,11 +17,11 @@ By manually creating rewards, practitioners can help the system to learn. This w
 
 Yet, especially in finance, and especially in trading, hand-crafted reward shaping is useful. Risk-averse trading is an example of creating a clever objective function. Instead of maximizing the expected reward, risk-averse reinforcement learning maximizes an evaluation function, u, which is an extension of the utility-based shortfall to a multistage setting:
 
-<p align="center"><img src="https://github.com/sabypackt/Articles/blob/master/image1.png"; alt="Equation 1" /></p>
+<p align="center"><img src="https://github.com/sabypackt/articles_data/blob/master/simplystats/practical_tips_for_rl_engineering/image1.png"; alt="Equation 1" /></p>
 
 Here _u_ is a concave, continuous, and strictly increasing function that can be freely chosen according to how much risk the trader is willing to take. The RL algorithm now maximizes as follows:
 
-<p align="center"><img src="https://github.com/sabypackt/Articles/blob/master/image2.png"; alt="Equation 2" /></p>
+<p align="center"><img src="https://github.com/sabypackt/articles_data/blob/master/simplystats/practical_tips_for_rl_engineering/image2.png"; alt="Equation 2" /></p>
 
 ### Inverse reinforcement learning
 
@@ -37,7 +37,7 @@ In **inverse reinforcement learning** (**IRL**), a model is trained to predict t
 
 Similar to IRL, which produces a reward function from human examples, there are also algorithms that learn from human preferences. A reward predictor produces a reward function under which policy is trained. The goal of the reward predictor is to produce a reward function that results in a policy that has a large human preference. Human preference is measured by showing the human the results of two policies and letting the human indicate which one is more preferable:
 
-<p style="text-align:center"><p align="center"><img src="https://github.com/sabypackt/Articles/blob/master/image3.png"; alt="Figure 1" /></p>
+<p style="text-align:center"><p align="center"><img src="https://github.com/sabypackt/articles_data/blob/master/simplystats/practical_tips_for_rl_engineering/image3.png"; alt="Figure 1" /></p>
 
 <p align="center">Figure 1: Learning from preferences.</p>
 
@@ -59,7 +59,7 @@ You have now seen some practical tips using RL techniques. Yet, RL is a moving f
 ## Multi agent RL
 Markets, by definition, include many agents. Lowe and others, 2017, _Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments_ (see [https://arxiv.org/abs/1706.02275](https://arxiv.org/abs/1706.02275)), shows that reinforcement learning can be used to train agents that cooperate, compete, and communicate depending on the situation.
 
-<p align="center"><img src = "https://github.com/sabypackt/Articles/blob/master/image4.png"; alt="Figure 2" /></p>
+<p align="center"><img src = "https://github.com/sabypackt/articles_data/blob/master/simplystats/practical_tips_for_rl_engineering/image4.png"; alt="Figure 2" /></p>
 <p align="center">Figure 2: Multiple agents (in red) working together to chase the green dots. From the OpenAI blog</p>
 
 In an experiment, Lowe and others let agents communicate, by including a communication vector into the action space. The communication vector one agent outputted was then made available to other agents. They showed that the agents learned to communicate to solve a task. Similar research showed that agents adopted collaborative or competitive strategies based on the environment. 
@@ -71,7 +71,7 @@ In a task where the agent had to collect reward tokens, agents collaborated as l
 A shortcoming of deep learning is that skilled humans have to develop neural networks. Because of that, a longstanding dream of researchers and companies having to pay PhDs is to automate the process of designing neural networks. 
 One example of this so-called Auto-ML is the **neural evolution of augmenting topologies**, **NEAT**, algorithm. NEAT uses an evolutionary strategy to design a neural network that is then trained by standard backpropagation:
 
-<p align="center"><img src = "https://github.com/sabypackt/Articles/blob/master/image5.png"; alt="Figure 3" /></p>
+<p align="center"><img src = "https://github.com/sabypackt/articles_data/blob/master/simplystats/practical_tips_for_rl_engineering/image5.png"; alt="Figure 3" /></p>
 <p align="center">Figure 3: A network developed by the NEAT algorithm.</p>
 
 As you can see in the preceding diagram, the networks developed by NEAT are often smaller than traditional, layer-based neural nets. They are hard to come up with. This is the strength of AutoML, it can find effective strategies that humans would not have discovered. 
